@@ -1,0 +1,134 @@
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+}
+
+header{
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+
+nav{
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+.Fundo{
+  background-color: #008080;
+}
+
+.conteudo{
+  width: 900px;
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+img{
+  width: 300px;
+}
+
+.Flex-conteudo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Flex-conteudo .col{
+  width: 430px;
+
+}
+
+.textocentralizado{
+  text-align: justify;
+}
+
+.funcionalidades{
+  width: 60%;
+}
+
+.funcionalidades figure{
+  border: 1px solid #c4c4c4 ;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+}
+
+.funcionalidades figure img{
+  vertical-align: middle;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 1px solid #6dd432;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+form textarea{
+  resize: none;
+}
+
+form{
+  width: 380px;
+}
+
+footer{
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 0;
+}
+
+
+@media (max-width: 925px){
+  section, nav, header, footer{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  nav{
+    flex-direction: row;
+  }
+  h1, h2, h3, p{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .conteudo, .Flex-conteudo, .Fundo, .funcionalidades, .textocentralizado{
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
+  .col img{
+    display: flex;
+    width: 100%;
+
+
+  }
+
+}
+
+
+

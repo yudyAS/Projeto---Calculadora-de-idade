@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/calculadora.css" />
+  </head>
+  <body>
+     <header>
+      <nav class="navbar">
+        <div class="logo">Calculadora de Idade</div>
+        <button class="menu-toggle" aria-label="Abrir Menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="login.html">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <main class="main">
+        <div class="container">
+          <h2>Calcule sua idade</h2>
+
+          <form id="calcForm">
+            <input
+              type="text"
+              id="Nome"
+              placeholder="Nome"
+              required
+            />
+            <input
+              type="date"
+              id="dataNasc"
+              placeholder="Data de Nascimento"
+              required
+            />
+            <button class="calcularSubmit" type="submit">Calcular</button>
+          </form>
+          <!-- Tabela para exibir as idades calculadas -->
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="calcTabela">
+              <!-- As idades calculadas aparecerão aqui -->
+            </tbody>
+          </table>
+        </div>
+        <!-- Modal para exibir os detalhes -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Idade Calculada</h2>
+            <div class="modal-info">
+              <p><strong>Id:</strong> <span id="modalId"></span></p>
+              <p>
+                <strong>Nome:</strong> <span id="modalNome"></span>
+              </p>
+              <p>
+                <strong>Data Nascimento:</strong> <span id="modalDataNasc"></span>
+              </p>
+              <p>
+                <strong>Idade:</strong> <span id="modalIdade"></span>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </body>
+    <script src="js/calculadora.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
